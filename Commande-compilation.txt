@@ -1,0 +1,8 @@
+ocamllex lexMRB.mll
+ocamlyacc parseMRB.mly
+ocamlc -c parseMRB.mli
+ocamlc -c  parseMRB.ml
+ocamlc -c  lexMRB.ml
+ocamlc -c main.ml
+
+ ocamlc -o cmrb parseMRB.cmo lexMRB.cmo main.cmo
